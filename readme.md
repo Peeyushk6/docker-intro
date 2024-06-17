@@ -33,12 +33,13 @@ EXPOSE 3000
 CMD ["node", "dist/index.js"]
 
 Common commands
-WORKDIR: Sets the working directory for any RUN, CMD, ENTRYPOINT, COPYinstructions that follow it.
-RUN: Executes any commands in a new layer on top of the current image and commits the results.
-CMD: Provides defaults for executing a container. There can only be one CMD instruction in a Dockerfile.
-EXPOSE: Informs Docker that the container listens on the specified network ports at runtime.
-ENV: Sets the environment variable.
-COPY: Allow files from the Docker host to be added to the Docker image
+
+- WORKDIR: Sets the working directory for any RUN, CMD, ENTRYPOINT, COPYinstructions that follow it.
+- RUN: Executes any commands in a new layer on top of the current image and commits the results.
+- CMD: Provides defaults for executing a container. There can only be one CMD instruction in a Dockerfile.
+- EXPOSE: Informs Docker that the container listens on the specified network ports at runtime.
+- ENV: Sets the environment variable.
+  C- OPY: Allow files from the Docker host to be added to the Docker image
 
 Common docker commands
 docker images
