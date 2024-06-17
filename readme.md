@@ -32,7 +32,7 @@ EXPOSE 3000
 
 CMD ["node", "dist/index.js"]
 
-##Common commands
+## Common commands
 
 - WORKDIR: Sets the working directory for any RUN, CMD, ENTRYPOINT, COPYinstructions that follow it.
 - RUN: Executes any commands in a new layer on top of the current image and commits the results.
@@ -41,7 +41,8 @@ CMD ["node", "dist/index.js"]
 - ENV: Sets the environment variable.
   C- OPY: Allow files from the Docker host to be added to the Docker image
 
-##Common docker commands
+## Common docker commands
+
 docker images
 docker ps
 docker run
